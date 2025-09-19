@@ -1,0 +1,194 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Content container */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* Headings */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-left: 4px solid #667eea;
+  padding-left: 1rem;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Lists */
+ol, ul {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+strong {
+  color: #2c3e50;
+}
+
+/* Image styling */
+.tesla-portrait {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 5px solid #fff;
+  margin: 2rem 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+.tesla-portrait:hover {
+  transform: scale(1.02);
+}
+
+/* Links and buttons */
+.links {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #2c3e50;
+  color: white;
+  margin-top: 2rem;
+}
+
+footer p {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .content {
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+  
+  section {
+    padding: 1.5rem;
+  }
+  
+  .btn {
+    display: block;
+    margin: 0.5rem auto;
+    width: 90%;
+    max-width: 300px;
+  }
+}
